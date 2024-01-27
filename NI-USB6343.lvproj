@@ -824,7 +824,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/E/NewTS/NewTS_Execution Engine/ExecEng_Builds/NI-USB6343_builds/NI-USB6343_Application</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{9137C910-658A-41AA-B060-287E146CD45E}</Property>
-				<Property Name="Bld_version.build" Type="Int">89</Property>
+				<Property Name="Bld_version.build" Type="Int">90</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">NI-USB6343.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/E/NewTS/NewTS_Execution Engine/ExecEng_Builds/NI-USB6343_builds/NI-USB6343_Application/NI_AB_PROJECTNAME.exe</Property>
@@ -950,7 +950,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4806E634-D6D1-4449-B9CB-240228E2E2E3}</Property>
 				<Property Name="INST_installerName" Type="Str">NI-USB6343_install.exe</Property>
 				<Property Name="INST_productName" Type="Str">NI-USB6343_Installer</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.55</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.56</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20018007</Property>
 				<Property Name="MSI_arpCompany" Type="Str">NewTS, LLC.</Property>
