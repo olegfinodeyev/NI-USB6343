@@ -123,7 +123,7 @@
 				<Item Name="NI_USB6343_Sequence_FilePath_Browse_StartPath.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_FilePath_Browse_StartPath.vi"/>
 				<Item Name="NI_USB6343_Sequence_FormatValue.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_FormatValue.vi"/>
 				<Item Name="NI_USB6343_Sequence_Open.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_Open.vi"/>
-				<Item Name="NI_USB6343_Sequence_Save.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_Save.vi"/>
+				<Item Name="ExecEng_Instruments_Sequence_Save.vi" Type="VI" URL="../../../SubVIs/ExecEng_Generic.llb/ExecEng_Instruments_Sequence_Save.vi"/>
 				<Item Name="NI_USB6343_Sequence_TestCaseConfig_UserMenu.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_TestCaseConfig_UserMenu.vi"/>
 				<Item Name="NI_USB6343_Sequence_UserLastAction_AdddToSequence.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_UserLastAction_AdddToSequence.vi"/>
 				<Item Name="NI_USB6343_SequenceExecution_CLEAR_Pause_ABORT.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_SequenceExecution_CLEAR_Pause_ABORT.vi"/>
@@ -236,7 +236,6 @@
 				<Item Name="NI_USB6343_LabelsConstant_UserLastSelection.vi" Type="VI" URL="../SubVIs/NI_USB6343_TypeDefinitions.llb/NI_USB6343_LabelsConstant_UserLastSelection.vi"/>
 				<Item Name="NI_USB6343_Synch_Refs.ctl" Type="VI" URL="../SubVIs/NI_USB6343_TypeDefinitions.llb/NI_USB6343_Synch_Refs.ctl"/>
 				<Item Name="NI_USB6343_Synch_Refs_FunctionalGlobal.vi" Type="VI" URL="../SubVIs/NI_USB6343_TypeDefinitions.llb/NI_USB6343_Synch_Refs_FunctionalGlobal.vi"/>
-				<Item Name="NI_USB6343_TestCase_Execution_Pause_Ref.vi" Type="VI" URL="../SubVIs/NI_USB6343_TypeDefinitions.llb/NI_USB6343_TestCase_Execution_Pause_Ref.vi"/>
 				<Item Name="OS_Synch_Refs.ctl" Type="VI" URL="../SubVIs/NI_USB6343_TypeDefinitions.llb/OS_Synch_Refs.ctl"/>
 			</Item>
 			<Item Name="NI_USB6343_UDP_Interface.llb" Type="Folder">
@@ -272,6 +271,8 @@
 		<Item Name="Controls.rtm" Type="Document" URL="../Controls.rtm"/>
 		<Item Name="NI-USB6343.ico" Type="Document" URL="../NI-USB6343.ico"/>
 		<Item Name="VI Server Toolkit LV2013.lvlib" Type="Library" URL="../../../../../../LabVIEW 2020 Toolkits/VI Server Toolkit/VI Server Toolkit LV2013.lvlib"/>
+		<Item Name="NI_USB6343_Sequence_AddNewSettingsLabel.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_AddNewSettingsLabel.vi"/>
+		<Item Name="NI_USB6343_Sequence_RemoveSettingsLabel.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_RemoveSettingsLabel.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
@@ -585,6 +586,11 @@
 				<Item Name="DAQmx Read (Power Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power Wfm 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Read (Power 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Power 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan NSamp).vi"/>
+				<Item Name="Less Comparable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Comparable/Less Comparable.lvclass"/>
+				<Item Name="Less Functor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Functor/Less Functor.lvclass"/>
+				<Item Name="Less.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Less.vim"/>
+				<Item Name="Sort 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Sort 1D Array Core.vim"/>
+				<Item Name="Sort 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 1D Array.vim"/>
 			</Item>
 			<Item Name="EXI8000_Synch_Refs_FunctionalGlobal.vi" Type="VI" URL="../../EXI-8000PCIe/SubVIs/EXI-8000PCIe_TypeDefinitions.llb/EXI8000_Synch_Refs_FunctionalGlobal.vi"/>
 			<Item Name="Configuration ~ Read  Boolean.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/toolkits_lv2020_32bit/CFG Management/Configuration File Drivers.llb/Configuration ~ Read  Boolean.vi"/>
@@ -798,13 +804,17 @@
 			<Item Name="Error 200284_ClearCounterReadTimeOut.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/toolkits_lv2020_32bit/Errors Management.llb/Error 200284_ClearCounterReadTimeOut.vi"/>
 			<Item Name="Configuration ~ Read String.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/toolkits_lv2020_32bit/CFG Management/Configuration File Drivers.llb/Configuration ~ Read String.vi"/>
 			<Item Name="VI Server_Signaling_Set Text Ring by Item Selected.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/VI Server Toolkit/VI Server_SetControls/VI Server_Signaling_Set Text Ring by Item Selected.vi"/>
-			<Item Name="NI_USB6343_LabelsConstant_DigitalInput_Output_Settings.vi" Type="VI" URL="../SubVIs/NI_USB6343_TypeDefinitions.llb/NI_USB6343_LabelsConstant_DigitalInput_Output_Settings.vi"/>
 			<Item Name="NI_USB6343_Settings_SAVE.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Settings_SAVE.vi"/>
 			<Item Name="NI_USB6343_Settings_Load.vi" Type="VI" URL="../SubVIs/NI_USB6343_Initialization.llb/NI_USB6343_Settings_Load.vi"/>
-			<Item Name="NI_USB6343_LabelsConstant_Settings_Counter_IN_Params.vi" Type="VI" URL="../SubVIs/NI_USB6343_TypeDefinitions.llb/NI_USB6343_LabelsConstant_Settings_Counter_IN_Params.vi"/>
-			<Item Name="NI_USB6343_LabelsConstant_Settings_Counter_OUT_Params.vi" Type="VI" URL="../SubVIs/NI_USB6343_TypeDefinitions.llb/NI_USB6343_LabelsConstant_Settings_Counter_OUT_Params.vi"/>
 			<Item Name="Merge Errors w_o Warning.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/toolkits_lv2020_32bit/MIscellaneous VIs.llb/Merge Errors w_o Warning.vi"/>
 			<Item Name="CFG_File_Refnam_Empty.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/toolkits_lv2020_32bit/CFG Management/Configuration File Drivers.llb/CFG_File_Refnam_Empty.vi"/>
+			<Item Name="ExecEng_InstrGeneric_Sequence_Save.vi" Type="VI" URL="../../../SubVIs/ExecEng_Instruments_Generic.llb/ExecEng_InstrGeneric_Sequence_Save.vi"/>
+			<Item Name="Set_Knob_Dbl Control.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/VI Server Toolkit/VI Server Libraries/VI Server_Set Controls.llb/Set_Knob_Dbl Control.vi"/>
+			<Item Name="ExecEng_LimitsType.ctl" Type="VI" URL="../../../SubVIs/ExEng_TypeDefs.llb/ExecEng_LimitsType.ctl"/>
+			<Item Name="VI Server_Knob_DBL_Get.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/VI Server Toolkit/VI Server Libraries/VI Server_GetControl.llb/VI Server_Knob_DBL_Get.vi"/>
+			<Item Name="VI Server_Set Signaling Value of Menu Ring by Item Selection.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/VI Server Toolkit/VI Server_SetControls/VI Server_Set Signaling Value of Menu Ring by Item Selection.vi"/>
+			<Item Name="ExecEng_CFG_File_Refnam_Empty.vi" Type="VI" URL="../../../SubVIs/ExEng_Utilities.llb/ExecEng_CFG_File_Refnam_Empty.vi"/>
+			<Item Name="Configuration_GetKeyArrayValues_2D_Array_Output.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/toolkits_lv2020_32bit/CFG Management/Configuration File Drivers.llb/Configuration_GetKeyArrayValues_2D_Array_Output.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="NI-USB6343_Application" Type="EXE">
@@ -824,7 +834,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/E/NewTS/NewTS_Execution Engine/ExecEng_Builds/NI-USB6343_builds/NI-USB6343_Application</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{9137C910-658A-41AA-B060-287E146CD45E}</Property>
-				<Property Name="Bld_version.build" Type="Int">90</Property>
+				<Property Name="Bld_version.build" Type="Int">91</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">NI-USB6343.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/E/NewTS/NewTS_Execution Engine/ExecEng_Builds/NI-USB6343_builds/NI-USB6343_Application/NI_AB_PROJECTNAME.exe</Property>
@@ -950,7 +960,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4806E634-D6D1-4449-B9CB-240228E2E2E3}</Property>
 				<Property Name="INST_installerName" Type="Str">NI-USB6343_install.exe</Property>
 				<Property Name="INST_productName" Type="Str">NI-USB6343_Installer</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.56</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.57</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20018007</Property>
 				<Property Name="MSI_arpCompany" Type="Str">NewTS, LLC.</Property>
