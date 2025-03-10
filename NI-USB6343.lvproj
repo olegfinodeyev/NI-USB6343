@@ -271,8 +271,6 @@
 		<Item Name="Controls.rtm" Type="Document" URL="../Controls.rtm"/>
 		<Item Name="NI-USB6343.ico" Type="Document" URL="../NI-USB6343.ico"/>
 		<Item Name="VI Server Toolkit LV2013.lvlib" Type="Library" URL="../../../../../../LabVIEW 2020 Toolkits/VI Server Toolkit/VI Server Toolkit LV2013.lvlib"/>
-		<Item Name="NI_USB6343_Sequence_AddNewSettingsLabel.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_AddNewSettingsLabel.vi"/>
-		<Item Name="NI_USB6343_Sequence_RemoveSettingsLabel.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_RemoveSettingsLabel.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
@@ -815,6 +813,8 @@
 			<Item Name="VI Server_Set Signaling Value of Menu Ring by Item Selection.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/VI Server Toolkit/VI Server_SetControls/VI Server_Set Signaling Value of Menu Ring by Item Selection.vi"/>
 			<Item Name="ExecEng_CFG_File_Refnam_Empty.vi" Type="VI" URL="../../../SubVIs/ExEng_Utilities.llb/ExecEng_CFG_File_Refnam_Empty.vi"/>
 			<Item Name="Configuration_GetKeyArrayValues_2D_Array_Output.vi" Type="VI" URL="../../../../../../LabVIEW 2020 Toolkits/toolkits_lv2020_32bit/CFG Management/Configuration File Drivers.llb/Configuration_GetKeyArrayValues_2D_Array_Output.vi"/>
+			<Item Name="NI_USB6343_Sequence_RemoveSettingsLabel.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_RemoveSettingsLabel.vi"/>
+			<Item Name="NI_USB6343_Sequence_AddNewSettingsLabel.vi" Type="VI" URL="../SubVIs/NI_USB6343_SequenceManagement.llb/NI_USB6343_Sequence_AddNewSettingsLabel.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="NI-USB6343_Application" Type="EXE">
